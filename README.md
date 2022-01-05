@@ -1,1 +1,1 @@
-# biyondata-strategy-business-partner
+# biyondata-strategic-business-partner
