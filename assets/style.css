@@ -59,7 +59,7 @@
   }
   
   .logo-short{
-    max-width: 100px;
+    max-width: 280px;
   }
   
   
@@ -97,6 +97,12 @@
   font-family: 'Karla', sans-serif;
   }
   
+
+  .card-deck {
+    max-width: 920px;
+    -ms-flex-align: center;
+  }
+
   h1{
     color: #102c35;
   }
@@ -166,7 +172,7 @@
   }
   
   
-  /* .footer {
+  .footer {
     position: fixed;
     margin-top: auto;
     padding: 10px;
@@ -182,7 +188,7 @@
     padding: 20px;
     margin-top: 10px;
     box-align: center;
-  } */
+  }
   
   @media screen and (max-width: 800px) {
   .card {
