@@ -48,25 +48,53 @@
   margin-right: auto;
   width: 100%;
   }
+
+  #hero-img {
+  background-size: cover;
+  background-position: center;
+  }
   /* .navbar-expand{-sm|-md|-lg|-xl}; */
   
-  #hero-img {
+  #hero-logo {
     max-width: 80%;
+    padding:  60px;
   }
   
+  .ethos-logo{
+    max-width: 80px;
+  }
+
+  .hero-image {
+    background: url(/Users/nicolarees/Desktop/biyondata-strategic-business-partner/assets/img/AdobeStock_356555301.jpeg) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
   .logo {
     max-width: 280px;
+    padding: 10px;
   }
   
   .logo-short{
     max-width: 280px;
+    padding: 15px;
   }
   
   
   .container {
     margin: 10px; 
     margin-top: 10px;
-    padding: 10px;
+    padding: 20px;
    
   }
   
@@ -84,9 +112,9 @@
     background-color: #102C35;
   }
   
-  .jumbotron-fluid {
+  /* .jumbotron-fluid {
   padding-top: 2%;
-  }
+  } */
   
   #jumbotron-text{
     color: #fff;
@@ -144,11 +172,16 @@
     list-style-type: circle;
   }
   
+  i {
+    padding: 5px;
+  }
+
   main {
-    padding: 10px;
-    padding-top: 70px;
+    padding: 30px;
+    /* padding-top: 120px; */
     width: 100%;
     align-content: top;
+    align-self: center;
   }
   
   section {
