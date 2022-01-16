@@ -5,7 +5,7 @@
   
   body {
   font-size: 16px;
-  
+  align-content: center;
   }
   
   nav {
@@ -32,7 +32,7 @@
     border-color: #cca43b;
   }
   
-  container {
+  /* main {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -40,7 +40,7 @@
   width: 95%;
   align-content: center;
   
-  }
+  } */
   
   img { 
   display: block;
@@ -49,14 +49,14 @@
   width: 100%;
   }
 
-  #hero-img {
+  /* #hero-img {
   background-size: cover;
   background-position: center;
-  }
+  } */
   /* .navbar-expand{-sm|-md|-lg|-xl}; */
   
   #hero-logo {
-    max-width: 80%;
+    /* max-width: 100%; */
     padding:  60px;
   }
   
@@ -65,15 +65,15 @@
   }
 
   .hero-image {
-    background: url(/Users/nicolarees/Desktop/biyondata-strategic-business-partner/assets/img/AdobeStock_356555301.jpeg) no-repeat center; 
+    background: url(/assets/img/AdobeStock_268100942.jpeg) no-repeat center; 
     background-size: cover;
     height: 500px;
-    position: relative;
+    position: 1 relative;
   }
   
   .hero-text {
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -91,12 +91,13 @@
   }
   
   
-  .container {
+ .container {
     margin: 10px; 
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 20px;
+    align-content: center;
    
-  }
+  } 
   
   #line-break {
     border-top: 2px solid #cca43b;
@@ -141,7 +142,10 @@
   }
   
   h2{
-    color: #102c35;
+ 
+    color: #fff;
+    text-shadow: 0.1px 0 0 #000, 0 -.5px 0 #000, 0.1px 0 #000, -.5px 0 0 #000;
+   
   }
   
   h3{
@@ -248,6 +252,11 @@
     width: 100%;
     align-self: center;
   }
+
+  main {
+    margin-top: 30px;
+  }
+
   .card {
     width:95%;
     align-content: center;
