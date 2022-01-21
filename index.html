@@ -50,6 +50,19 @@
         color: #102c35;
     }
 
+    .content {
+        max-width: 1280px !important;
+        margin: auto;
+        padding: 10px;
+    }
+
+
+    .content-wide {
+        max-width: 1920px !important;
+        margin: auto;
+        padding: 10px;
+    }
+
     /* Full height image header */
     .bgimg-1 {
         background-position: center;
@@ -70,6 +83,10 @@
         background-color: #102c35;
     }
 
+    .bg-gold {
+        background-color: #cca43b;
+    }
+
     .btn-gold {
         background-color: #cca43b !important;
     }
@@ -84,7 +101,7 @@
 
     .icon-padding {
         padding-top: 20px;
-        color: #102c35;
+        color: #cca43b !important;
     }
 </style>
 
@@ -117,15 +134,16 @@
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large w3-text-white"
+    <nav class="w3-sidebar w3-bar-block w3-dark w3-card w3-animate-left w3-hide-medium w3-hide-large w3-text-white"
         style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-text-white w3-button w3-large w3-padding-16">Close
             ×</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">ABOUT</a>
+        <a href="#services" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">SERVICES</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">WORK</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">PRICING</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">CONTACT</a>
     </nav>
 
     <!-- Header with full-height image -->
@@ -148,344 +166,365 @@
             <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
     </header>
-
-    <!-- About Section -->
-    <div class="w3-container" style="padding:128px 16px" id="about">
-        <h3 class="w3-center">ABOUT US</h3>
-        <p class="w3-center w3-large">
-            We aim to achieve our clients' goals while ensuring a friendly and enjoyable working relationship, with
-            honesty and transparency at the forefront.</p>
-        <p class="w3-center w3-large">We are in the business of helping our clients thrive and we are
-            lucky to
-            get paid for doing that.​
-        </p>
-        <div class="w3-row-padding w3-center" style="margin-top:64px">
-            <div class="w3-quarter">
-                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-                <h5>Experience</h5>
-                <p>Many small and medium sized business have never raised capital or pitched to investors. They don't
-                    know where to start.
-                    <br>
-                    We've been there, done that.
-                </p>
-            </div>
-            <div class="w3-quarter">
-                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-                <h5>Passion</h5>
-                <p>At BIYONDATA, we love helping people achieve their goals, we acquire an elevated level of
-                    satisfaction from making people (clients) happy.
-                </p>
-
-            </div>
-            <div class="w3-quarter">
-                <i class="fas fa-chart-line w3-margin-bottom w3-jumbo"></i>
-                <h5>Time & Cost</h5>
-                <p>
-                    Preparing materials for fund raising efforts is time consuming. It distracts the business and the
-                    team from “running the business”.
-                </p>
-                <p>
-                    We provide cost effective solutions, only pay for what you need.
-                </p>
-
-            </div>
-            <div class="w3-quarter">
-                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-                <h5>Support</h5>
-                <p>Preparing materials for fund raising efforts is time consuming. It distracts the business and the
-                    team from “running the business”.
-                    <br>
-                    We do the heavy lifting, with support from your team.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Promo Section - "We know design" -->
-    <div class="w3-container w3-light-grey" style="padding:128px 16px">
-        <div class="w3-row-padding">
-            <div class="w3-col m6">
-                <h3>What we do.</h3>
-                <p>BIYONDATA was founded in 2021, after identifying a gap in the market for a
-                    support
-                    service to help small and mid-sized companies grow by preparing to raise capital from institutional
-                    investors.</p>
-
-                <p>
-                    At BIYONDATA, we love helping people achieve their goals, we acquire an elevated level of
-                    satisfaction from
-                    making our clients happy.</p>
-
-                <p>
+    <w3-container class="content center">
+        <!-- About Section -->
+        <div class="w3-container" style="padding:128px 16px" id="about">
+            <div class="content-wide">
+                <h3 class="w3-center">ABOUT US</h3>
+                <p class="w3-center w3-large">
                     We aim to achieve our clients' goals while ensuring a friendly and enjoyable working relationship,
                     with
-                    honesty and transparency at the forefront. We are in the business of making people happy and we are
+                    honesty and transparency at the forefront.</p>
+                <p class="w3-center w3-large">We are in the business of helping our clients thrive and we are
                     lucky to
-                    get paid for doing that.</p>
-                <br>
+                    get paid for doing that.​
+                </p>
+                <div class="w3-row-padding w3-center" style="margin-top:64px">
+                    <div class="w3-quarter">
+                        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                        <h5>Experience</h5>
+                        <p>Many small and medium sized business have never raised capital or pitched to investors. They
+                            don't
+                            know where to start.
+                            <br>
+                            We've been there, done that.
+                        </p>
+                    </div>
+                    <div class="w3-quarter">
+                        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                        <h5>Passion</h5>
+                        <p>At BIYONDATA, we love helping people achieve their goals, we acquire an elevated level of
+                            satisfaction from making people (clients) happy.
+                        </p>
 
-                <p><a href="#work" class="w3-button w3-black btn-gold "><i class="fa fa-th icon-white"> </i> View Our
-                        Work</a></p>
-            </div>
-            <div class="w3-col m6">
-                <img class="w3-image w3-round-large" src="./assets/img/AdobeStock_272842496.jpeg" alt="Buildings"
-                    width="700" height="394">
-            </div>
-        </div>
-    </div>
-
-    <!-- Services Section -->
-    <div class="w3-container" style="padding:128px 16px" id="services">
-        <h3 class="w3-center">OUR SERVICES</h3>
-        <p class="w3-center w3-large">What we can do for you</p>
-        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-bezier-curve w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
                     </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Financial modelling & forecasting​</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-handshake w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Investor relations</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-expand-arrows-alt w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>M&A analysis</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-table w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Capitialisation table managament</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-chess-knight w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Strategy</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-dollar-sign w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Budgeting & financial performance analysis</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-user-tie w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Company / Board / Investor presentations</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
+                    <div class="w3-quarter">
                         <i class="fas fa-chart-line w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Dashboards (Excel or Power BI)</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-project-diagram w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Project analysis</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-expand w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Acquisitions</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-search-dollar w3-margin-bottom w3-jumbo"></i>
-                        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
-                    </div>
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Market & industry research</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <div class="w3-center icon-padding">
-                        <i class="fas fa-ellipsis-h w3-margin-bottom w3-jumbo "></i>
-                    </div>
-                    <!-- <img src="/w3images/team4.jpg" alt="Dan" style="width:100%"> -->
-                    <div class="w3-container">
-                        <h3></h3>
-                        <h5>Adhoc tasks</h5>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
-                                Contact</button></p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                        <h5>Time & Cost</h5>
+                        <p>
+                            Preparing materials for fund raising efforts is time consuming. It distracts the business
+                            and
+                            the
+                            team from “running the business”.
+                        </p>
+                        <p>
+                            We provide cost effective solutions, only pay for what you need.
+                        </p>
 
-    <!-- Promo Section "Statistics" -->
-    <div class="w3-container w3-row w3-center w3-dark w3-padding-64 w3-text-white">
-        <div class="w3-quarter">
-            <span class="w3-xxlarge w3-text-white">14+</span>
-            <br>Partners
-        </div>
-        <div class="w3-quarter">
-            <span class="w3-xxlarge w3-text-white">55+</span>
-            <br>Projects Done
-        </div>
-        <div class="w3-quarter">
-            <span class="w3-xxlarge w3-text-white">89+</span>
-            <br>Happy Clients
-        </div>
-        <div class="w3-quarter">
-            <span class="w3-xxlarge w3-text-white">150+</span>
-            <br>Investor Meetings
-        </div>
-    </div>
-
-    <!-- Work Section -->
-    <div class="w3-container" style="padding:128px 16px" id="work">
-        <h3 class="w3-center">OUR WORK</h3>
-        <p class="w3-center w3-large">What we've done for people</p>
-
-        <div class="w3-row-padding" style="margin-top:64px">
-            <div class="w3-col l3 m6">
-                <img src="./assets/img/AdobeStock_272842496.jpeg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity"
-                    alt="For this $30m client we updated all existing excel reporting to a dynamic PowerBI dashboard report that streamlined business decision making">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="./assets/img/AdobeStock_67446163.jpeg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Successfully raised capital to the value of $4million">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="./assets/img/AdobeStock_330714671.jpeg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Valuation of company that exceeded intial expectations">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="./assets/img/AdobeStock_364545095.jpeg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity"
-                    alt="Developed a business partnership that enable the client to gain funding of $1m">
+                    </div>
+                    <div class="w3-quarter">
+                        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                        <h5>Support</h5>
+                        <p>Preparing materials for fund raising efforts is time consuming. It distracts the business and
+                            the
+                            team from “running the business”.
+                            <br>
+                            We do the heavy lifting, with support from your team.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="w3-row-padding w3-section">
+        <!-- Promo Section - "We know design" -->
+        <div class="w3-container w3-light-grey" style="padding:128px 16px">
+            <div class="content">
+                <div class="w3-row-padding">
+                    <div class="w3-col m6">
+                        <h3>What we do.</h3>
+                        <p>BIYONDATA was founded in 2021, after identifying a gap in the market for a
+                            support
+                            service to help small and mid-sized companies grow by preparing to raise capital from
+                            institutional
+                            investors.</p>
+
+                        <p>
+                            At BIYONDATA, we love helping people achieve their goals, we acquire an elevated level of
+                            satisfaction from
+                            making our clients happy.</p>
+
+                        <p>
+                            We aim to achieve our clients' goals while ensuring a friendly and enjoyable working
+                            relationship,
+                            with
+                            honesty and transparency at the forefront. We are in the business of making people happy and
+                            we
+                            are
+                            lucky to
+                            get paid for doing that.</p>
+                        <br>
+
+                        <p><a href="#work" class="w3-button w3-black btn-gold "><i class="fa fa-th icon-white"> </i>
+                                View
+                                Our
+                                Work</a></p>
+                    </div>
+                    <div class="w3-col m6">
+                        <img class="w3-image w3-round-large" src="./assets/img/AdobeStock_272842496.jpeg"
+                            alt="Buildings" width="700" height="394">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="w3-container" style="padding:128px 16px" id="services">
+            <div class="content-wide">
+                <h3 class="w3-center">OUR SERVICES</h3>
+                <p class="w3-center w3-large">What we can do for you</p>
+                <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-bezier-curve w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Financial modelling & forecasting​</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-handshake w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Investor relations</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-expand-arrows-alt w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>M&A analysis</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-table w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Capitialisation table managament</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-chess-knight w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Strategy</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-dollar-sign w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Budgeting & financial performance analysis</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-user-tie w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Company / Board / Investor presentations</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-chart-line w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Dashboards (Excel or Power BI)</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-project-diagram w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Project analysis</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-expand w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Acquisitions</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-search-dollar w3-margin-bottom w3-jumbo"></i>
+                                <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+                            </div>
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Market & industry research</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card">
+                            <div class="w3-center icon-padding">
+                                <i class="fas fa-ellipsis-h w3-margin-bottom w3-jumbo "></i>
+                            </div>
+                            <!-- <img src="/w3images/team4.jpg" alt="Dan" style="width:100%"> -->
+                            <div class="w3-container">
+                                <h3></h3>
+                                <h5>Adhoc tasks</h5>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                    elementum.</p>
+                                <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Promo Section "Statistics" -->
+        <div class="w3-container w3-row w3-center bg-gold w3-padding-48 w3-text-white">
+            <div class="content-wide">
+                <div class="w3-quarter">
+                    <span class="w3-xxlarge w3-text-white">14+</span>
+                    <br>Partners
+                </div>
+                <div class="w3-quarter">
+                    <span class="w3-xxlarge w3-text-white">55+</span>
+                    <br>Projects Done
+                </div>
+                <div class="w3-quarter">
+                    <span class="w3-xxlarge w3-text-white">89+</span>
+                    <br>Happy Clients
+                </div>
+                <div class="w3-quarter">
+                    <span class="w3-xxlarge w3-text-white">150+</span>
+                    <br>Investor Meetings
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Section -->
+        <div class="w3-container" style="padding:128px 16px" id="work">
+            <div class="content-wide">
+                <h3 class="w3-center">OUR WORK</h3>
+                <p class="w3-center w3-large">What we've done for people</p>
+
+                <div class="w3-row-padding" style="margin-top:64px">
+                    <div class="w3-col l3 m6">
+                        <img src="./assets/img/AdobeStock_272842496.jpeg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity"
+                            alt="For this $30m client we updated all existing excel reporting to a dynamic PowerBI dashboards">
+                    </div>
+                    <div class="w3-col l3 m6">
+                        <img src="./assets/img/AdobeStock_67446163.jpeg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="Successfully raised capital to the value of $4million">
+                    </div>
+                    <div class="w3-col l3 m6">
+                        <img src="./assets/img/AdobeStock_330714671.jpeg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="Valuation of company that exceeded intial expectations">
+                    </div>
+                    <div class="w3-col l3 m6">
+                        <img src="./assets/img/AdobeStock_364545095.jpeg" style="width:100%" onclick="onClick(this)"
+                            class="w3-hover-opacity"
+                            alt="Developed a business partnership that enable the client to gain funding of $1m">
+                    </div>
+                </div>
+
+
+                <!-- <div class="w3-row-padding w3-section">
             <div class="w3-col l3 m6">
                 <img src="./assets/img/AdobeStock_330430354.jpeg" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity" alt="Dashboard reporting">
@@ -501,254 +540,314 @@
             <div class="w3-col l3 m6">
                 <img src="./assets/img/AdobeStock_117773502.jpeg" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity" alt="Improved budgeting for business">
+            </div>-->
+
             </div>
         </div>
-    </div>
 
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
-            title="Close Modal Image">×</span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-text-white w3-large"></p>
-        </div>
-    </div>
-
-    <!-- Skills Section -->
-    <div class="w3-container w3-light-grey w3-padding-64">
-        <div class="w3-row-padding">
-            <div class="w3-col m6">
-                <h3>Our Skills.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-                    tempor incididunt ut labore et dolore.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-                    tempor incididunt ut labore et dolore.</p>
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+                title="Close Modal Image">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-text-white w3-large"></p>
             </div>
-            <div class="w3-col m6">
-                <p class="w3-wide"><i class="fas fa-hand-holding-usd w3-margin-right"></i>Capital raising</p>
-                <div class="w3-grey">
-                    <div class="w3-container w3-dark w3-center w3-text-white" style="width:90%">90%</div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="w3-container w3-light-grey w3-padding-64">
+            <div class="content">
+                <div class="w3-row-padding">
+                    <div class="w3-col m6">
+                        <h3>Our Skills.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                            tempor incididunt ut labore et dolore.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                            tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div class="w3-col m6">
+                        <p class="w3-wide"><i class="fas fa-hand-holding-usd w3-margin-right"></i>Capital raising</p>
+                        <div class="w3-grey">
+                            <div class="w3-container w3-dark w3-center w3-text-white" style="width:90%">90%</div>
+                        </div>
+                        <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Financial reporting</p>
+                        <div class="w3-grey">
+                            <div class="w3-container w3-dark w3-center w3-text-white" style="width:85%">85%</div>
+                        </div>
+                        <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>M&A Activities</p>
+                        <div class="w3-grey">
+                            <div class="w3-container w3-dark w3-center w3-text-white" style="width:75%">75%</div>
+                        </div>
+                    </div>
                 </div>
-                <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Financial reporting</p>
-                <div class="w3-grey">
-                    <div class="w3-container w3-dark w3-center w3-text-white" style="width:85%">85%</div>
-                </div>
-                <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>M&A Activities</p>
-                <div class="w3-grey">
-                    <div class="w3-container w3-dark w3-center w3-text-white" style="width:75%">75%</div>
-                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Pricing Section -->
-    <div class="w3-container w3-center w3-dark w3-text-white" style="padding:128px 16px" id="pricing">
-        <h3 class="w3-text-white">PRICING</h3>
-        <p class="w3-large w3-text-white">Choose a pricing plan that fits your needs.</p>
-        <div class="w3-row-padding" style="margin-top:64px">
-            <div class="w3-third w3-section">
-                <ul class="w3-ul w3-white w3-hover-shadow">
-                    <li class="w3-light-grey w3-xlarge w3-padding-32">Start-up</li>
-                    <li class="w3-padding-16">Standard financial model</li>
-                    <li class="w3-padding-16">Company valuation</li>
-                    <li class="w3-padding-16">Pitch deck</li>
-                    <li class="w3-padding-16">Capitalisation table</li>
-                    <li class="w3-padding-16">12 month operational budget</li>
-                    <li class="w3-padding-16">Support & guidance</li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 5,400 + gst</h2>
-                        <span class="w3-opacity">one-off cost</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-black btn-gold w3-padding-large">Book a call</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="w3-third">
-                <ul class="w3-ul w3-white w3-hover-shadow">
-                    <li class="w3-light-grey w3-xlarge w3-padding-48">Growth</li>
-                    <li class="w3-padding-16">Detailed financial model</li>
-                    <li class="w3-padding-16">Company valuation</li>
-                    <li class="w3-padding-16">Custom design pitch deck</li>
-                    <li class="w3-padding-16">Capitalisation table</li>
-                    <li class="w3-padding-16">12 month operational budget</li>
-                    <li class="w3-padding-16">Support & guidance</li>
+        <!-- Pricing Section -->
+        <div class="w3-container w3-center w3-dark w3-text-white" style="padding:128px 16px" id="pricing">
+            <div class="content-wide">
+                <h3 class="w3-text-white">PRICING</h3>
+                <p class="w3-large w3-text-white">Choose a pricing plan that fits your needs.</p>
+                <div class="w3-row-padding" style="margin-top:64px">
+                    <div class="w3-third w3-section">
+                        <ul class="w3-ul w3-white w3-hover-shadow">
+                            <li class="w3-light-grey w3-xlarge w3-padding-32">Start-up</li>
+                            <li class="w3-padding-16">Standard financial model</li>
+                            <li class="w3-padding-16">Company valuation</li>
+                            <li class="w3-padding-16">Pitch deck</li>
+                            <li class="w3-padding-16">Capitalisation table</li>
+                            <li class="w3-padding-16">12 month operational budget</li>
+                            <li class="w3-padding-16">Support & guidance</li>
+                            <li class="w3-padding-16">
+                                <h2 class="w3-wide">$ 5,400 + gst</h2>
+                                <span class="w3-opacity">one-off cost</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-black btn-gold w3-padding-large">Book a call</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w3-third">
+                        <ul class="w3-ul w3-white w3-hover-shadow">
+                            <li class="w3-light-grey w3-xlarge w3-padding-48">Growth</li>
+                            <li class="w3-padding-16">Detailed financial model</li>
+                            <li class="w3-padding-16">Company valuation</li>
+                            <li class="w3-padding-16">Custom design pitch deck</li>
+                            <li class="w3-padding-16">Capitalisation table</li>
+                            <li class="w3-padding-16">12 month operational budget</li>
+                            <li class="w3-padding-16">Support & guidance</li>
 
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 6,800 + gst</h2>
-                        <span class="w3-opacity">one-off cost</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-black btn-gold w3-padding-large">Book a call</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="w3-third w3-section">
-                <ul class="w3-ul w3-white w3-hover-shadow">
-                    <li class="w3-light-grey w3-xlarge w3-padding-32">Marketing</li>
-                    <li class="w3-padding-16">Company teaser</li>
-                    <li class="w3-padding-16">Access to investor database (Aus only)</li>
-                    <li class="w3-padding-16">We contact & pitch to potential investors on your behalf</li>
-                    <li class="w3-padding-16">We meet with investors on your behalf</li>
-                    <li class="w3-padding-16">On Market / Wholesale Investor / OurCrowd</li>
-                    <li class="w3-padding-16">Support & guidence</li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 1,800 + gst</h2>
-                        <span class="w3-opacity">one-off cost + 2.9% success fee</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-black btn-gold w3-padding-large">Book a call</button>
-                    </li>
-                </ul>
-            </div>
+                            <li class="w3-padding-16">
+                                <h2 class="w3-wide">$ 6,800 + gst</h2>
+                                <span class="w3-opacity">one-off cost</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-black btn-gold w3-padding-large">Book a call</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w3-third w3-section">
+                        <ul class="w3-ul w3-white w3-hover-shadow">
+                            <li class="w3-light-grey w3-xlarge w3-padding-32">Marketing</li>
+                            <li class="w3-padding-16">Company teaser</li>
+                            <li class="w3-padding-16">Access to investor database (Aus only)</li>
+                            <li class="w3-padding-16">We contact & pitch to potential investors on your behalf</li>
+                            <li class="w3-padding-16">We meet with investors on your behalf</li>
+                            <li class="w3-padding-16">On Market / Wholesale Investor / OurCrowd</li>
+                            <li class="w3-padding-16">Support & guidence</li>
+                            <li class="w3-padding-16">
+                                <h2 class="w3-wide">$ 1,800 + gst</h2>
+                                <span class="w3-opacity">one-off cost + 2.9% success fee</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-black btn-gold w3-padding-large">Book a call</button>
+                            </li>
+                        </ul>
+                    </div>
 
-        </div>
-        <div>
-            <br>
-            <h3 class="w3-text-white">AMPLIFY</h3>
-            <p class="w3-large w3-text-white">Do you need a little extra help? If you don't have the budget for a full
-                time
-                employee Biyondata can provide a cost effective solution to reduce your workload.</p>
-            <p class="w3-large w3-text-white">We support your operations with any of our offered services, and you'll
-                only pay
-                for
-                what you need.</p>
-            <div class="w3-container w3-row w3-center w3-dark w3-padding-64 w3-text-white">
-                <div class="w3-quarter">
-                    <span class="w3-xxlarge w3-text-white"></span>
+                </div>
+                <div>
                     <br>
+                    <h3 class="w3-text-white">AMPLIFY</h3>
+                    <p class="w3-large w3-text-white">Do you just need a little extra help? If you don't have the budget
+                        for
+                        a
+                        full
+                        time
+                        employee Biyondata can provide a cost effective solution to reduce your workload.</p>
+                    <p class="w3-large w3-text-white">We support your operations with any of our offered services, and
+                        you'll
+                        only pay
+                        for
+                        what you need.</p>
+                    <div class="w3-container w3-row w3-center w3-dark w3-padding-64 w3-text-white">
+                        <div class="w3-quarter">
+                            <span class="w3-xxlarge w3-text-white"></span>
+                            <br>
+                        </div>
+                        <div class="w3-quarter">
+                            <span class="w3-xlarge w3-text-white">$145 / hour + gst</span>
+                            <br>Less than 30 hours per month
+                        </div>
+                        <div class="w3-quarter">
+                            <span class="w3-xlarge w3-text-white">$125 / hour + gst</span>
+                            <br>Over 30 hours per month
+                        </div>
+                        <div class="w3-quarter">
+                            <span class="w3-xxlarge w3-text-white"></span>
+                            <br>
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-quarter">
-                    <span class="w3-xlarge w3-text-white">$145 / hour + gst</span>
-                    <br>Less than 30 hours per month
-                </div>
-                <div class="w3-quarter">
-                    <span class="w3-xlarge w3-text-white">$125 / hour + gst</span>
-                    <br>Over 30 hours per month
-                </div>
-                <div class="w3-quarter">
-                    <span class="w3-xxlarge w3-text-white"></span>
+            </div>
+        </div>
+
+        <!-- Who we are Section - "Keiran Bio" -->
+
+        <div class="w3-container w3-white" style="padding:128px 16px">
+            <div class="w3-row-padding content">
+                <div class="w3-col m6">
+                    <h3>Who we are.</h3>
+
+                    <h4>Keiran Hoare</h4>
+                    <h5> CEO & Founder of BIYONDATA​</h5>
+                    <p>Keiran founded BIYONDATA in 2021, after identifying a gap in market for small and mid-sized
+                        companies and their lack of experience in preparing to raise capital from institutional
+                        investors.​
+                    </p>
+                    <p>
+                        Keiran has extensive financial markets experience, having worked in the industry for over 12
+                        years.
+                    </p>
+                    <p>
+                        Key skill set includes financial model, financial statement analysis, company valuation,
+                        investor
+                        pitch decks and strategy.​
+                    </p>
+                    <p>
+                        Keiran has worked across both public and private equity markets. An equity research analyst at
+                        Moelis Australia (now MA Financial), covering small- cap ASX listed stocks, predominately in the
+                        tech space. Following on from this Keiran moved to the buy-side where he worked for Anacacia
+                        capital, a boutique fund manager, and Argyle Capital, a real-asset investment manager as an
+                        investment analyst.​
+                    </p>
+                    <h5>Qualifications</h5>
+                    <p>
+                    <ul>
+                        <li>Bachelor of Business (Finance Major, IT Sub-Major)</li>
+                        <li>UTS Sydney Graduate Certificate of Applied Finance​</li>
+                    </ul>
+                    </p>
                     <br>
+                    <p><a href="#work" class="w3-button w3-black btn-gold"><i class="fa fa-th icon-white"> </i> View Our
+                            Work</a></p>
+                </div>
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="./assets/img/keiran_hoare.png" alt="Buildings" width="700"
+                        height="394">
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Who we are Section - "Keiran Bio" -->
-    <div class="w3-container w3-white" style="padding:128px 16px">
-        <div class="w3-row-padding">
-            <div class="w3-col m6">
-                <h3>Who we are.</h3>
+        <!-- Contact Section -->
+        <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+            <div class="content">
+                <h3 class="w3-center">CONTACT</h3>
+                <p class="w3-center w3-large">Get in touch. Send us a message:</p>
+                <div style="margin-top:48px w3-center">
 
-                <h4>Keiran Hoare</h4>
-                <h5> CEO & Founder of BIYONDATA​</h5>
-                <p>Keiran founded BIYONDATA in 2021, after identifying a gap in market for small and mid-sized
-                    companies and their lack of experience in preparing to raise capital from institutional investors.​
-                </p>
-                <p>
-                    Keiran has extensive financial markets experience, having worked in the industry for over 12 years.
-                </p>
-                <p>
-                    Key skill set includes financial model, financial statement analysis, company valuation, investor
-                    pitch decks and strategy.​
-                </p>
-                <p>
-                    Keiran has worked across both public and private equity markets. An equity research analyst at
-                    Moelis Australia (now MA Financial), covering small- cap ASX listed stocks, predominately in the
-                    tech space. Following on from this Keiran moved to the buy-side where he worked for Anacacia
-                    capital, a boutique fund manager, and Argyle Capital, a real-asset investment manager as an
-                    investment analyst.​
-                </p>
-                <h5>Qualifications</h5>
-                <p>
-                <ul>
-                    <li>Bachelor of Business (Finance Major, IT Sub-Major)</li>
-                    <li>UTS Sydney Graduate Certificate of Applied Finance​</li>
-                </ul>
-                </p>
-                <br>
-                <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Work</a></p>
+
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-card w3-white" style="margin-right:20px">
+                            <p class="w3-center w3-large">Get in touch. Send us a message:</p>
+                            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Brisbane, Aus</p>
+                            <p><i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i> LinkedIn: <a
+                                    href="https://www.linkedin.com/in/keiranhoare/">
+                                    Keiran Hoare</a></i></li>
+                            </p>
+                            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email:
+                                keiran@biyondata.com.au </p>
+                            <br>
+                            <div class="w3-container">
+
+                                <form action="/action_page.php" target="_blank">
+                                    <p><input class="w3-input w3-border" type="text" placeholder="Name" required
+                                            name="Name">
+                                    </p>
+                                    <p><input class="w3-input w3-border" type="text" placeholder="Email" required
+                                            name="Email">
+                                    </p>
+                                    <p><input class="w3-input w3-border" type="text" placeholder="Subject" required
+                                            name="Subject">
+                                    </p>
+                                    <p><input class="w3-input w3-border" type="text" placeholder="Message" required
+                                            name="Message">
+                                    </p>
+                                    <p>
+                                        <button class="w3-button w3-black btn-gold" type="submit">
+                                            <i class="fa fa-paper-plane icon-white"></i> SEND MESSAGE
+                                        </button>
+                                    </p>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l9 m6 w3-margin-bottom">
+                        <div class="w3-card w3-white" style="margin-right:20px">
+                            <p class="w3-center w3-large">
+
+                                <i class="fa fa-calendar"></i> SCHEDULE A CALL
+
+                            </p>
+                            <div class="w3-container">
+
+                                <iframe
+                                    src="https://outlook.office365.com/owa/calendar/BIYONDATA@biyondata.com.au/bookings/"
+                                    style="height:500px;width:100%">
+                                </iframe>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-            <div class="w3-col m6">
-                <img class="w3-image w3-round-large" src="./assets/img/keiran_hoare.png" alt="Buildings" width="700"
-                    height="394">
+        </div>
+        </container>
+        <!--Footer -->
+        <footer class="w3-center w3-black w3-padding-64">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the
+                top</a>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
             </div>
-        </div>
-    </div>
+        </footer>
 
-    <!-- Contact Section -->
-    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-        <h3 class="w3-center">CONTACT</h3>
-        <p class="w3-center w3-large">Get in touch. Send us a message:</p>
-        <div style="margin-top:48px">
-            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Brisbane, Aus</p>
-            <p><i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i> LinkedIn: <a
-                    href="https://www.linkedin.com/in/keiranhoare/">
-                    Keiran Hoare</a></i></li>
-            </p>
-            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: keiran@biyondata.com.au </p>
-            <br>
-            <form action="/action_page.php" target="_blank">
-                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject">
-                </p>
-                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                </p>
-                <p>
-                    <button class="w3-button w3-black btn-gold" type="submit">
-                        <i class="fa fa-paper-plane icon-white"></i> SEND MESSAGE
-                    </button>
-                </p>
-            </form>
-            <!-- Image of location/map -->
-            <img src="assets/img/AdobeStock_360538697.jpeg" class="w3-image w3-greyscale"
-                style="width:100%;margin-top:48px">
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <!-- <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i> -->
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-        <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                class="w3-hover-text-green">w3.css</a></p> -->
-    </footer>
-
-    <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-
-        // Toggle between showing and hiding the sidebar when clicking the menu icon
-        var mySidebar = document.getElementById("mySidebar");
-
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-            } else {
-                mySidebar.style.display = 'block';
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
             }
-        }
 
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
-        }
-    </script>
+
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                } else {
+                    mySidebar.style.display = 'block';
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+            }
+
+
+            function myFunction() {
+                var iframe = document.getElementById("myFrame");
+                var elmnt = iframe.contentWindow.document.getElementsByTagName("H1")[0];
+                elmnt.style.display = "none";
+            }
+
+
+        </script>
 
 </body>
 
